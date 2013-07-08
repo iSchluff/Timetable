@@ -1,0 +1,40 @@
+@import("mixins/reset")
+@import("mixins/css3")
+@import("mixins/site")
+
+/**************************
+* Header
+**************************/
+
+header
+  input[type="text"]
+    border: none;
+    margin: 8px 0 8px 3%;
+    padding: 2px 0;
+    font-size: .9em
+
+    width: 91%
+    padding-left: 2%;
+    border-radius: 2px;
+    box-shadow(0 1px 3px 0 #ccc inset)
+
+/**************************
+* Table
+**************************/
+
+.content
+  box-shadow(0 1px 3px 0 #ccc inset)
+  a
+    width: 100%
+    display: block
+    text-align: center
+    text-decoration: none
+    color: #666
+    padding: 10px 0
+    border-bottom: 1px solid white
+    &:nth-child(even)
+      background: #f2f2f2
+    &:hover
+      border-bottom: 1px solid #ccc
+      background: #dfdfdf
+      color: #fff

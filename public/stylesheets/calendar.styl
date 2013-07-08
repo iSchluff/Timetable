@@ -1,0 +1,59 @@
+@import("mixins/reset")
+@import("mixins/css3")
+@import("mixins/site")
+
+h1
+  padding: 10px
+  margin-left: 5%
+  //color: #77e606
+
+.cell
+  width: 100%
+  display: table
+  font-family: 'Source Sans Pro', sans-serif;
+  div
+    display: table-row
+    p
+      display: table-cell
+      padding: 3px 0 3px 0
+      &.l
+        padding-left: 5%
+      &.r
+        text-align: right
+        padding-right: 5%
+    &:last-child
+      p
+        border-bottom: 1px solid #eee
+        padding-bottom: 6px
+/**************************
+* Mobile
+**************************/
+@media (max-width: 768px)
+  .cssTable
+    width: 100%
+    .fiveColumn
+      .column
+        .heading
+          padding: 7px 7px 7px 7%
+          linear-gradient(#eee, #ddd)
+          border-bottom: 1px solid #eee
+        &:first-child .heading
+          box-shadow(0 1px 3px 0 #ccc inset)
+
+/**************************
+* Desktop
+**************************/
+@media (min-width: 768px)
+  .cssTable
+    width: 100%
+    display: table
+    .fiveColumn
+      display: table-row
+      .column
+        display: table-cell
+        border-right: 1px solid #ccc;
+        .heading
+          box-shadow(0 4px 3px -4px #ccc inset)
+          padding: 15px
+          text-align: center
+  

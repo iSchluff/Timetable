@@ -1,0 +1,161 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #666;
+}
+h1 {
+  font-size: 1em;
+}
+header {
+  width: 100%;
+  background: #fff;
+  background: -moz-linear-gradient(top, #fff 0%, #eee 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #eee));
+  -webkit-background-origin: padding-box;
+}
+.content {
+  background: #f5f5f5;
+}
+h1 {
+  padding: 10px;
+  margin-left: 5%;
+}
+.cell {
+  width: 100%;
+  display: table;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.cell div {
+  display: table-row;
+}
+.cell div p {
+  display: table-cell;
+  padding: 3px 0 3px 0;
+}
+.cell div p.l {
+  padding-left: 5%;
+}
+.cell div p.r {
+  text-align: right;
+  padding-right: 5%;
+}
+.cell div:last-child p {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+/**************************
+* Mobile
+**************************/
+@media (max-width: 768px) {
+  .cssTable {
+    width: 100%;
+  }
+  .cssTable .fiveColumn .column .heading {
+    padding: 7px 7px 7px 7%;
+    background: #eee;
+    background: -moz-linear-gradient(top, #eee 0%, #ddd 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eee), color-stop(100%, #ddd));
+    -webkit-background-origin: padding-box;
+    border-bottom: 1px solid #eee;
+  }
+  .cssTable .fiveColumn .column:first-child .heading {
+    -moz-box-shadow: 0 1px 3px 0 #ccc inset;
+    -webkit-box-shadow: 0 1px 3px 0 #ccc inset;
+    box-shadow: 0 1px 3px 0 #ccc inset;
+  }
+}
+/**************************
+* Desktop
+**************************/
+@media (min-width: 768px) {
+  .cssTable {
+    width: 100%;
+    display: table;
+  }
+  .cssTable .fiveColumn {
+    display: table-row;
+  }
+  .cssTable .fiveColumn .column {
+    display: table-cell;
+    border-right: 1px solid #ccc;
+  }
+  .cssTable .fiveColumn .column .heading {
+    -moz-box-shadow: 0 4px 3px -4px #ccc inset;
+    -webkit-box-shadow: 0 4px 3px -4px #ccc inset;
+    box-shadow: 0 4px 3px -4px #ccc inset;
+    padding: 15px;
+    text-align: center;
+  }
+}

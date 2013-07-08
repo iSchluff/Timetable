@@ -1,0 +1,27 @@
+
+doctype 5
+html
+  head
+    title=title
+    link(rel="stylesheet", href="/stylesheets/calendar.css", type="text/css")
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300', type='text/css')
+    script(src='/javascript/calendar.js')
+  body
+    header
+      h1 #{title}
+    .content
+      section.cssTable
+        .fiveColumn
+          for column in week
+            .column
+              .heading= column.day
+              for event in column.events
+                .cell
+                  div
+                    p.l= event.name
+                    p.r= event.time
+                  div
+                    p.l= event.location
+                    p.r= event.lecturer
+              
+              

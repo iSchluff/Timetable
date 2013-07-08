@@ -1,0 +1,133 @@
+@import "mixins/css3"
+@import "mixins/reset"
+
+
+/* Set up document
+-----------------------------------------------------------------------------*/
+body
+  font 62.5%/1.5  Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif
+  text-align center
+
+#wrapper
+  text-align left 
+  margin-left auto 
+  margin-right auto
+  padding 20px
+
+/* Typography
+-----------------------------------------------------------------------------*/
+h1
+  color #666
+  font 4em 'ChunkFiveRegular'
+  line-height 0.9em
+  margin-bottom 0.9em
+
+h2 
+  font-size: 1.8em
+  line-height 1em
+  margin-bottom 1em
+
+h3 
+  font-size 1.6em
+  line-height 1.13em
+  margin-bottom 1.13em
+
+h4 
+  font-size 1.4em
+  line-height 1.29em
+  margin-bottom 1.29em
+
+h5 
+  font-size 1.3em
+  line-height 1.38em
+  margin-bottom 1.38em
+
+h6 
+  font-size 1.2em
+  line-height 1.5em
+  margin-bottom 1.5em 
+
+p, q, cite, address, ul, ol, dl
+  font-size 1.2em
+  line-height 1.5em
+  margin-bottom 1.5em 
+
+li, dd, dt
+  font-size 1em 
+
+a
+  text-decoration underline
+  color #3333cc
+  outline none
+
+a:hover
+  text-decoration none
+
+code, samp, dfn, kbd, var, acronym, ins, del
+
+abbr 
+  speak spell-out
+
+acronym 
+  speak normal
+
+
+/* CSS Tables
+-----------------------------------------------------------------------------*/
+tableRow(columns)
+  display: table-row
+  .cell
+    display: table-cell
+    width: ((50%-(5%*(columns -1)))/columns)
+    padding-right: 5%
+    &:last-child
+      padding-right: 0
+
+.css-table
+  width 100%
+  display table
+  .two-column
+    tableRow(2)
+  .three-column
+    tableRow(3)
+  .four-column
+    tableRow(4)
+
+/* Header
+-----------------------------------------------------------------------------*/
+header
+  linear-gradient(#fff, #f5f5f5)
+  box-shadow(0 1px 3px 0 #ccc)
+  width 100%
+  nav
+    text-align right
+    margin-left auto 
+    margin-right auto
+    ul 
+      list-style none
+      padding 10px
+      margin-bottom 0
+      li 
+        display inline
+        margin-left 1%
+        a 
+          border-radius(5px)
+          display inline-block
+          padding 5px 15px 6px 
+          color #fff
+          text-decoration none
+          position relative
+          cursor pointer
+          linear-gradient(#bbb, #aaa)
+          &:hover
+            background #db0d5f
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer
+  color #666
+  border-top 1px solid #ccc
+  padding-top 1.5em
+  ul 
+    list-style none
+

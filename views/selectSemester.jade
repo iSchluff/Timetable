@@ -1,0 +1,5 @@
+extends layouts/select
+
+block content
+  for semester in course.semesters
+    a(href="?course="+course.short+"&semester="+semester)= semester+". Semester"

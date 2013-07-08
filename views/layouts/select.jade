@@ -1,0 +1,11 @@
+doctype 5
+html
+  head
+    title=title
+    link(rel="stylesheet", href="/stylesheets/select.css")
+    script(src='/javascript/select.js')
+    body
+      header
+        input(type='text', placeholder="Search", name='textinput', onkeypress="filter(this.value)", autocomplete='on')
+      section.content
+        block content

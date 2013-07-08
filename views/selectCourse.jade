@@ -1,0 +1,5 @@
+extends layouts/select
+
+block content
+  for course in courses
+    a(href="?course="+course.short) #{course.name}
